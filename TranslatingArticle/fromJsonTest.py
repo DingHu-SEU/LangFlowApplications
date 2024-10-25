@@ -10,8 +10,8 @@ logger = logging.getLogger(__name__)
 # 1、模型相关配置
 # # openai模型相关配置 根据自己的实际情况进行调整
 MODEL_API_BASE = "https://sg.uiuiapi.com/v1"
-MODEL_CHAT_API_KEY = "sk-BT6qbPpS2XxwH52aAdNOg51c9EfWx33woetUyrRxwEWm43Rt"
-MODEL_CHAT_MODEL = "gpt-4o"
+MODEL_CHAT_API_KEY = "sk-HGh1fXkzJphvPtLVarO3rIZBJan0d7rTlOMgrV7AyCIowzGM"
+MODEL_CHAT_MODEL = "gpt-4o-mini"
 
 # oneapi相关配置(通义千问为例) 根据自己的实际情况进行调整
 # MODEL_API_BASE = "http://139.224.72.218:3000/v1"
@@ -74,7 +74,7 @@ TWEAKS = {
         "expected_output": "正确并使用学术化语言的中文翻译",
         "goal": "你应该提供关于输入文本正确、学术性的中文翻译",
         "memory": True,
-        "role": "Editor",
+        "role": "Translator",
         "task_description": "",
         "verbose": True
       },

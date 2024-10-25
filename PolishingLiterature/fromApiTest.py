@@ -29,7 +29,7 @@ MODEL_CHAT_MODEL = "gpt-4o-mini"
 
 
 # 3、API请求相关配置
-url = "http://127.0.0.1:7860/api/v1/run/TranslatingArticle"
+url = "http://127.0.0.1:7860/api/v1/run/PolishingLiterature"
 headers = {"Content-Type": "application/json"}
 
 
@@ -40,28 +40,28 @@ data = {
     "output_type": "chat",
     "input_type": "text",
     "tweaks": {
-      "SequentialCrewComponent-JQa4R": {
+      "SequentialCrewComponent-V4nfT": {
         "max_rpm": 100,
         "memory": False,
         "share_crew": False,
         "use_cache": True,
         "verbose": 0
       },
-      "OpenAIModel-f4jts": {
-        "api_key": MODEL_CHAT_API_KEY,
+      "OpenAIModel-zwyyU": {
+        "api_key": "sk-HGh1fXkzJphvPtLVarO3rIZBJan0d7rTlOMgrV7AyCIowzGM",
         # "input_value": "",
         "json_mode": False,
         "max_tokens": None,
         "model_kwargs": {},
-        "model_name": MODEL_CHAT_MODEL,
-        "openai_api_base": MODEL_API_BASE,
+        "model_name": "gpt-4o-mini",
+        "openai_api_base": "https://sg.uiuiapi.com/v1",
         "output_schema": {},
         "seed": 1,
         "stream": False,
         "system_message": "",
         "temperature": 0.1
       },
-      "ChatOutput-951oy": {
+      "ChatOutput-HH5Tg": {
         "data_template": "{text}",
         # "input_value": "",
         "sender": "Machine",
@@ -69,29 +69,29 @@ data = {
         "session_id": "",
         "should_store_message": True
       },
-      "Prompt-Vdl8O": {
-        "template": "Document: {document}\n\nTranslate this document into Chinese.",
+      "Prompt-NFnav": {
+        "template": "Document: {document}\n\nPolish the document using academic language.",
         "document": ""
       },
-      "SequentialTaskAgentComponent-eoVlw": {
+      "SequentialTaskAgentComponent-kGAEz": {
         "agent_kwargs": {},
         "allow_code_execution": False,
         "allow_delegation": False,
         "async_execution": False,
-        "backstory": "你是世界上最严谨的学术论文翻译者",
-        "expected_output": "正确并使用学术化语言的中文翻译",
-        "goal": "你应该提供关于输入文本正确、学术性的中文翻译",
+        "backstory": "你是世界上最卓越的学术化语言编辑",
+        "expected_output": "高学术化的经润色后的英文文本",
+        "goal": "你应该提供基于输入文本的高学术化的经润色后的英文文本，使用SCI期刊标准的论文语言 ",
         "memory": True,
-        "role": "Translator",
+        "role": "SCI Editor",
         "task_description": "",
         "verbose": True
       },
-      "ParseData-LfXld": {
+      "ParseData-rKIr6": {
         "sep": "\n",
         "template": "{text}"
       },
-      "File-T3Qf3": {
-        "path": "D:\\Desktop\\代码学习\\langflow\\UNet.pdf",
+      "File-i8joV": {
+        "path": "D:\\Desktop\\代码学习\\langflow\\test.txt",
         "silent_errors": False
       }
     }
