@@ -21,7 +21,7 @@ anaconda:提供python虚拟环境，官网下载对应系统版本的安装包�
 
 ## STEP 3 python环境安装
 
-anaconda环境研究好之后，在其上构建python环境，本项目使用python3.10版本。
+anaconda环境安装好之后，在其上构建python环境，本项目使用python3.10版本。
 
 ```
 conda create -n langflow python=3.10 # 创建langflow环境
@@ -35,7 +35,7 @@ conda activate langflow # 激活环境
 # 4、项目初始化
 
 ## 4.1 构建项目
-使用pycharm构建一个项目，为项目配置虚拟python环境               
+使用pycharm构建一个项目，为项目配置创建好的虚拟python环境langflow             
 项目名称：LangFlowTest                 
 
 ## 4.2 将相关代码拷贝到项目工程中           
@@ -84,7 +84,6 @@ ollama pull qwen2:latest
 ollama pull llama3.1:latest                                   
 ollama pull nomic-embed-text:latest    
 ```
-
 
 可使用的模型搭配如下:                  
 chat模型:qwen2:latest(7b),对应版本有0.5b、1.5b、7b、72b;llama3.1:latest(8b)，对应版本有8b、70b、405b等                
