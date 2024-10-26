@@ -93,3 +93,9 @@ embedding模型:nomic-embed-text:latest(也就是1.5版本)
 https://www.bilibili.com/video/BV1mpH9eVES1/?vd_source=30acb5331e4f5739ebbad50f7cc6b949               
 https://youtu.be/thNMan45lWA 
 
+# 7、使用注意点
+
+1、文件路径需要用双反斜杠表示
+2、组件设置中input_value后面为空的话最好注释掉。
+3、调用API实现flow的时候Setting中记得在图形化界面的左上角Setting选项中设置Endpoint Name与项目Name一致
+

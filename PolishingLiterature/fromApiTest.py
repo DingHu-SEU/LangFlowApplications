@@ -48,13 +48,13 @@ data = {
         "verbose": 0
       },
       "OpenAIModel-zwyyU": {
-        "api_key": "sk-HGh1fXkzJphvPtLVarO3rIZBJan0d7rTlOMgrV7AyCIowzGM",
+        "api_key": MODEL_CHAT_API_KEY,
         # "input_value": "",
         "json_mode": False,
         "max_tokens": None,
         "model_kwargs": {},
-        "model_name": "gpt-4o-mini",
-        "openai_api_base": "https://sg.uiuiapi.com/v1",
+        "model_name": MODEL_CHAT_MODEL,
+        "openai_api_base": MODEL_API_BASE,
         "output_schema": {},
         "seed": 1,
         "stream": False,
